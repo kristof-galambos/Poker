@@ -37,6 +37,7 @@ int main()
 
     time_t ended = clock();
     time_t totalTime = ended - started;
+	cout << "Time efficiency analysis of the code:" << endl;
     cout << setprecision(3);
     cout << experiments << " experiments done in " << (double)(totalTime)/CLOCKS_PER_SEC << " seconds, of which:" << endl;
     cout << setw(27) << "choosing random cards: " << setw(5) << (double)(my_cards.gotRandomCards)/totalTime*100 << "%" << endl;
